@@ -1,0 +1,354 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.start-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 36px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+  background: linear-gradient(135deg, #4338ca, #6d28d9);
+}
+
+.start-button i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover i {
+  transform: translateX(5px);
+}
+
+/* 특징 섹션 */
+.features-section {
+  padding: 40px 0;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.feature-card p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* 이용 방법 섹션 */
+.how-it-works {
+  padding: 60px 0;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.step {
+  text-align: center;
+  padding: 20px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-weight: bold;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.step p {
+  color: #64748b;
+}
+
+/* 공유 섹션 */
+.share-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.share-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 36px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 300px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.share-button i {
+  font-size: 1.5rem;
+}
+
+.share-button.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.share-button.twitter {
+  background: #1da1f2;
+}
+
+.share-button.kakao {
+  background: #fee500;
+  color: #000000;
+}
+
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #64748b;
+  margin-top: 40px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+  }
+
+  .start-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    min-width: unset;
+  }
+
+  .start-button i {
+    font-size: 1.1rem;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .share-button {
+    width: 100%;
+    min-width: unset;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+  }
+
+  .share-button i {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

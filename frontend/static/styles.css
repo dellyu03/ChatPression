@@ -1,0 +1,132 @@
+/* 기본 스타일 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+  padding: 40px 0;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.start-button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.start-button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* 특징 섹션 */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  color: #4b5563;
+}
+
+/* 푸터 스타일 */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #6b7280;
+  margin-top: 60px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+}

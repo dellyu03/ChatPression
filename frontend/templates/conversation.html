@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatPression - 대화</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/css/conversation.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ChatPression</h1>
+        <p class="subtitle">AI와 대화하며 나의 첫인상을 분석해보세요</p>
+      </header>
+
+      <div class="chat-container">
+        <div class="chat-header">
+          <h2>AI와 대화하기</h2>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <!-- 메시지들이 여기에 동적으로 추가됩니다 -->
+        </div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            class="message-input"
+            id="message-input"
+            placeholder="메시지를 입력하세요..."
+            required
+          />
+          <button class="send-button" id="send-button">
+            <i class="fas fa-paper-plane"></i>
+            <span>전송</span>
+          </button>
+        </div>
+      </div>
+
+      <button class="analyze-button" id="analyze-button">
+        <i class="fas fa-chart-bar"></i>
+        <span>분석하기</span>
+      </button>
+
+      <footer class="footer">
+        <p>© 2024 ChatPression. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="{{ url_for('static', path='/js/conversation.js') }}"></script>
+  </body>
+</html>

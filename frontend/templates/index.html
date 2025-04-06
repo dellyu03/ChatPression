@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#6366f1" />
+    <meta
+      name="description"
+      content="ChatPression과 대화하면서 알아보는 나의 첫인상. AI가 분석하는 당신의 성격과 이미지."
+    />
+    <meta
+      property="og:title"
+      content="ChatPression - AI와 대화로 알아보는 나의 첫인상"
+    />
+    <meta
+      property="og:description"
+      content="ChatPression과 대화하면서 알아보는 나의 첫인상. AI가 분석하는 당신의 성격과 이미지."
+    />
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <title>ChatPression - AI와 대화로 알아보는 나의 첫인상</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/css/index.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ChatPression</h1>
+        <p class="subtitle">AI와 대화하며 나의 첫인상을 분석해보세요</p>
+      </header>
+
+      <main class="main-content">
+        <section class="hero-section">
+          <div class="hero-content">
+            <h2>나의 첫인상은 어떨까?</h2>
+            <p>AI와 대화하며 당신의 성격과 첫인상을 분석해보세요</p>
+            <a href="/user-info" class="start-button">
+              시작하기
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </section>
+
+        <section class="features-section">
+          <h2>주요 특징</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>AI 분석</h3>
+              <p>최신 AI 기술을 활용한 정확한 성격 분석</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3>자연스러운 대화</h3>
+              <p>실제 대화처럼 자연스러운 AI와의 소통</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3>상세한 리포트</h3>
+              <p>당신의 성격과 첫인상에 대한 자세한 분석</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <h3>SNS 공유</h3>
+              <p>분석 결과를 SNS에 쉽게 공유</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="how-it-works">
+          <h2>이용 방법</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>정보 입력</h3>
+              <p>간단한 정보만 입력하세요</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>AI와 대화</h3>
+              <p>자연스러운 대화로 진행됩니다</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>결과 확인</h3>
+              <p>AI가 분석한 결과를 확인하세요</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="share-section">
+          <h2>친구들과 함께 테스트해보세요!</h2>
+          <div class="share-buttons">
+            <button class="share-button instagram" onclick="shareToInstagram()">
+              <i class="fab fa-instagram"></i>
+              Instagram
+            </button>
+            <button class="share-button twitter" onclick="shareToTwitter()">
+              <i class="fab fa-twitter"></i>
+              Twitter
+            </button>
+            <button class="share-button kakao" onclick="shareToKakao()">
+              <i class="fas fa-comment"></i>
+              KakaoTalk
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© 2024 ChatPression. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/index.js') }}"></script>
+  </body>
+</html>

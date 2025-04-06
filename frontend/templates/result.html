@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatPression - 분석 결과</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/css/result.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ChatPression</h1>
+        <p class="subtitle">당신의 첫인상 분석 결과</p>
+      </header>
+
+      <div class="result-container">
+        <div class="result-card">
+          <div class="result-grid">
+            <div class="result-image">
+              <div class="image-placeholder">
+                <i class="fas fa-user-circle"></i>
+                <p>AI가 생성한 이미지</p>
+              </div>
+            </div>
+            <div class="result-content">
+              <div class="result-section">
+                <h2>대화 성격 유형</h2>
+                <p class="personality-type">열정적 탐색가</p>
+                <div class="personality-traits">
+                  <div class="trait-bar">
+                    <div class="trait-label">공감력</div>
+                    <div class="trait-bar-container">
+                      <div class="trait-bar-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="trait-value">85%</div>
+                  </div>
+                  <div class="trait-bar">
+                    <div class="trait-label">창의성</div>
+                    <div class="trait-bar-container">
+                      <div class="trait-bar-fill" style="width: 90%"></div>
+                    </div>
+                    <div class="trait-value">90%</div>
+                  </div>
+                  <div class="trait-bar">
+                    <div class="trait-label">적극성</div>
+                    <div class="trait-bar-container">
+                      <div class="trait-bar-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="trait-value">75%</div>
+                  </div>
+                  <div class="trait-bar">
+                    <div class="trait-label">안정성</div>
+                    <div class="trait-bar-container">
+                      <div class="trait-bar-fill" style="width: 70%"></div>
+                    </div>
+                    <div class="trait-value">70%</div>
+                  </div>
+                </div>
+                <div class="personality-description">
+                  <p>
+                    당신은 '열정적 탐색가' 유형으로, 높은 공감력과 창의성을
+                    보여주는 대화 스타일을 가지고 있습니다. 새로운 아이디어를
+                    탐색하고 공유하는 것을 즐기며, 상대방의 감정을 잘 이해하고
+                    공감하는 능력이 뛰어납니다.
+                  </p>
+                </div>
+              </div>
+              <div class="result-section locked-section">
+                <h2>상세 분석</h2>
+                <div class="locked-content">
+                  <i class="fas fa-lock"></i>
+                  <p>더 자세한 분석을 보고 싶으신가요?</p>
+                  <div class="unlock-options">
+                    <button class="unlock-button ad-button" onclick="watchAd()">
+                      <i class="fas fa-play-circle"></i>
+                      <span>광고 시청하고 보기</span>
+                    </button>
+                    <button
+                      class="unlock-button support-button"
+                      onclick="support()"
+                    >
+                      <i class="fas fa-heart"></i>
+                      <span>후원하고 보기</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="share-section">
+          <h2>결과 공유하기</h2>
+          <div class="share-buttons">
+            <button class="share-button instagram" onclick="shareToInstagram()">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </button>
+            <button class="share-button twitter" onclick="shareToTwitter()">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </button>
+            <button class="share-button kakao" onclick="shareToKakao()">
+              <i class="fas fa-comment"></i>
+              <span>KakaoTalk</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2024 ChatPression. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="{{ url_for('static', path='/js/result.js') }}"></script>
+  </body>
+</html>

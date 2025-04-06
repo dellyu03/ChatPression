@@ -1,0 +1,318 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* 메인 컨텐츠 */
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* 사용자 정보 섹션 */
+.user-info-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.quick-start {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+}
+
+.quick-start h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* 폼 스타일 */
+.user-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+/* 제출 버튼 */
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #6366f1 0%, #a777e3 100%);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.button-text {
+  font-weight: 600;
+}
+ㄴ
+
+/* 공유 섹션 */
+.share-section {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.share-section p {
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.share-button i {
+  font-size: 1.3rem;
+}
+
+.share-button.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.share-button.twitter {
+  background: #1da1f2;
+}
+
+.share-button.kakao {
+  background: #fee500;
+  color: #000000;
+}
+
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #64748b;
+  margin-top: 40px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+  }
+
+  .start-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    min-width: unset;
+  }
+
+  .start-button i {
+    font-size: 1.1rem;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .share-button {
+    width: 100%;
+    min-width: unset;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .share-button i {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 성별 선택 라디오 버튼 */
+.gender-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.gender-option {
+  flex: 1;
+  position: relative;
+}
+
+.gender-option input[type="radio"] {
+  display: none;
+}
+
+.gender-option label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #f1f5f9;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.gender-option input[type="radio"]:checked + label {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.gender-option label:hover {
+  border-color: #6366f1;
+  transform: translateY(-1px);
+}

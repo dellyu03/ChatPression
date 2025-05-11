@@ -7,6 +7,8 @@ name = "pypi"
 fastapi = "*"
 jinja2 = "*"
 uvicorn = "*"
+openai = "*"
+dotenv = "*"
 
 [dev-packages]
 
